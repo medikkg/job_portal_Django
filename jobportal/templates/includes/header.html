@@ -1,69 +1,64 @@
 {% load static %}
 
 <header class="site-header mo-left header fullwidth">
-		<!-- Main Header -->
-        <div class="sticky-header main-bar-wraper navbar-expand-lg">
-            <div class="main-bar clearfix">
-                <div class="container clearfix">
-                    <!-- Website Logo -->
-                    <div class="logo-header mostion logo-dark">
-						<a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
-					</div>
-                    <div class="logo-header mostion logo-white">
-						<a href="{% url 'index' %}"><img src="{% static 'images/logo-white.png' %}" alt=""></a>
+    <!-- Main Header -->
+    <div class="sticky-header main-bar-wraper navbar-expand-lg">
+        <div class="main-bar clearfix">
+            <div class="container clearfix">
+                <!-- Website Logo -->
+                <div class="logo-header mostion logo-dark">
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                </div>
+                <div class="logo-header mostion logo-white">
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo-white.png' %}" alt=""></a>
+                </div>
+                
+                <!-- Nav Toggle Button -->
+                <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!-- Extra Nav -->
+                <div class="extra-nav">
+                    <div class="extra-cell">
+                        <a href="javascript:void(0);" class="layout-btn">
+                            <input type="checkbox">
+                            <span class="mode-label"></span>
+                        </a>
+                        <a href="register-2.html" class="site-button"><i class="fa fa-user"></i> Sign Up</a>
+                        <a href="javascript:void(0);" title="READ MORE" rel="bookmark" data-bs-toggle="modal" data-bs-target="#car-details" class="site-button"><i class="fa fa-lock"></i> login </a>
                     </div>
+                </div>
+                <!-- Main Nav -->
+                <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
+                    <div class="logo-header logo-dark">
+                        <a href="index.html"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                    </div>
+                    <div class="logo-header logo-white">
+                        <a href="index.html"><img src="{% static 'images/logo-white.png' %}" alt=""></a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="{% url 'home' %}" class="dez-page">Home</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'about' %}" class="dez-page">About</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'jobs' %}" class="dez-page">ALl Jobs</a>
+                        </li>
 
-					<!-- Nav Toggle Button -->
-                    <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-                    <!-- Extra Nav -->
-                    <div class="extra-nav">
-                        <div class="extra-cell">
-							<a href="javascript:void(0);" class="layout-btn">
-								<input type="checkbox">
-								<span class="mode-label"></span>
-							</a>
-                            <a href="{% url 'register_2' %}" class="site-button"><i class="fa fa-user"></i> Sign Up</a>
-							<a href="javascript:void(0);" title="READ MORE" rel="bookmark" data-bs-toggle="modal" data-bs-target="#car-details" class="site-button"><i class="fa fa-lock"></i> login </a>
-                        </div>
-                    </div>
-                    <!-- Main Nav -->
-                    <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
-						<div class="logo-header logo-dark">
-							<a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
-						</div>
-						<div class="logo-header logo-white">
-							<a href="{% url 'index' %}"><img src="{% static 'images/logo-white.png' %}" alt=""></a>
-                        </div>
-						<ul class="nav navbar-nav">
-							<li>
-								<a href="{% url 'index' %}">Home </a>
-							</li>
-							<li>
-								<a href="{% url 'about' %}">About us </a>
-							</li>
-							<li><a href="javascript:void(0);" class="dez-page">Jobs<i class="fa fa-chevron-down"></i></a>
-								<ul class="sub-menu">
-									<li><a href="{% url 'browse_job_list' %}" class="dez-page">browse job list</a></li>
-									<li><a href="{% url 'category_all_jobs' %}" class="dez-page">all jobs</a></li>
-									<li><a href="{% url 'category_company_jobs' %}" class="dez-page">company jobs</a></li>
-									<li><a href="{% url 'category_designations_jobs' %}" class="dez-page">designations jobs</a></li>
-									<li><a href="{% url 'category_jobs' %}" class="dez-page">category jobs</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="{% url 'blogs' %}">Blog </a>
-							</li>
-							<li>
-								<a href="{% url 'contact' %}">Contact us</a>
-							</li>
-						</ul>
-                    </div>
+                        <li>
+                            <a href="{% url 'blogs' %}" class="dez-page">Blog</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'contact' %}" class="dez-page">Contact</a>
+                        </li>
+                    </ul>		
                 </div>
             </div>
         </div>
-        <!-- Main Header END -->
-    </header>
+    </div>
+    <!-- Main Header END -->
+</header>
